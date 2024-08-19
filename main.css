@@ -1,0 +1,131 @@
+/* Reset básico para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Cor de fundo neutra */
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #3F7C75; /* Verde mais escuro da paleta */
+    padding: 20px;
+    text-align: center;
+}
+
+header .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: #FFFFFF; /* Branco para contraste */
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #D9EAD3; /* Verde claro para o subtítulo */
+    font-size: 18px;
+}
+
+/* Seção principal - Hero Section */
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #EAF2EF; /* Verde claro pastel */
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 90%;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+}
+
+.hero-text {
+    max-width: 600px;
+    padding: 20px;
+    text-align: justify; /* Texto justificado */
+}
+
+.hero-text h2 {
+    color: #247881; /* Azul petróleo da paleta */
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify; /* Texto justificado */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #247881; /* Azul petróleo da paleta */
+    color: #FFFFFF; /* Branco */
+    font-size: 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #3F7C75; /* Verde mais escuro da paleta */
+}
+
+/* Seção Sobre */
+.about-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    width: 90%;
+}
+
+.about-section div {
+    width: 48%;
+}
+
+.about-section h2 {
+    font-size: 26px;
+    color: #247881; /* Azul petróleo da paleta */
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #555;
+    text-align: justify; /* Texto justificado */
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #3F7C75; /* Verde mais escuro da paleta */
+    color: #FFFFFF; /* Branco */
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtração de Frações</title>
+    <link rel="stylesheet" href="lessons.css">
+</head>
+<body style="background-image: url('images/background.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="container">
+        <h1>Subtração de Frações</h1>
+
+        <!-- Vídeo de Introdução à Lição -->
+        <div class="video-container" id="videoContainer">
+            <video width="100%" controls>
+                <source src="videos/subtracao_intro.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+
+        <!-- Botão para iniciar os exercícios após o vídeo -->
+        <button id="startExercises">Iniciar Exercícios</button>
+
+        <!-- Exercícios (inicialmente ocultos) -->
+        <div id="exercises" style="display: none;">
+            <!-- Exercício 1: Múltipla Escolha -->
+            <div class="exercise" id="exercise1">
+                <h2>Exercício 1</h2>
+                <p>Qual é o resultado de <strong><sup>3</sup>&frasl;<sub>4</sub> - <sup>1</sup>&frasl;<sub>4</sub></strong>?</p>
+                <div class="options">
+                    <button class="answer" data-answer="1/2"><sup>1</sup>&frasl;<sub>2</sub></button>
+                    <button class="answer" data-answer="1/4"><sup>1</sup>&frasl;<sub>4</sub></button>
+                    <button class="answer" data-answer="2/4"><sup>2</sup>&frasl;<sub>4</sub></button>
+                    <button class="answer" data-answer="3/4"><sup>3</sup>&frasl;<sub>4</sub></button>
+                </div>
+                <div id="feedback1"></div>
+            </div>
+
+            <!-- Exercício 2: Preencha a Resposta -->
+            <div class="exercise" id="exercise2" style="display: none;">
+                <h2>Exercício 2</h2>
+                <p>Complete a subtração: <strong><sup>7</sup>&frasl;<sub>8</sub> - <sup>3</sup>&frasl;<sub>8</sub> =</strong></p>
+                <input type="text" id="answerInput2" placeholder="Sua resposta">
+                <button id="checkAnswer2">Verificar</button>
+                <div id="feedback2"></div>
+            </div>
+
+            <!-- Exercício 3: Arraste e Solte -->
+            <div class="exercise" id="exercise3" style="display: none;">
+                <h2>Exercício 3</h2>
+                <p>Arraste a fração correta para completar a subtração <strong><sup>5</sup>&frasl;<sub>6</sub> - <sup>1</sup>&frasl;<sub>6</sub> =</strong></p>
+                <div class="drop-zone" id="dropZone3">Solte aqui</div>
+                <div class="drag-options">
+                    <div class="draggable" draggable="true" data-answer="4/6"><sup>4</sup>&frasl;<sub>6</sub></div>
+                    <div class="draggable" draggable="true" data-answer="3/6"><sup>3</sup>&frasl;<sub>6</sub></div>
+                    <div class="draggable" draggable="true" data-answer="5/6"><sup>5</sup>&frasl;<sub>6</sub></div>
+                </div>
+                <div id="feedback3"></div>
+            </div>
+
+            <!-- Exercício 4: Múltipla Escolha -->
+            <div class="exercise" id="exercise4" style="display: none;">
+                <h2>Exercício 4</h2>
+                <p>Qual é o resultado de <strong><sup>5</sup>&frasl;<sub>6</sub> - <sup>2</sup>&frasl;<sub>6</sub></strong>?</p>
+                <div class="options">
+                    <button class="answer" data-answer="3/6"><sup>3</sup>&frasl;<sub>6</sub></button>
+                    <button class="answer" data-answer="1/2"><sup>1</sup>&frasl;<sub>2</sub></button>
+                    <button class="answer" data-answer="2/6"><sup>2</sup>&frasl;<sub>6</sub></button>
+                    <button class="answer" data-answer="5/6"><sup>5</sup>&frasl;<sub>6</sub></button>
+                </div>
+                <div id="feedback4"></div>
+            </div>
+
+            <!-- Exercício 5: Preencha a Resposta -->
+            <div class="exercise" id="exercise5" style="display: none;">
+                <h2>Exercício 5</h2>
+                <p>Complete a subtração: <strong><sup>7</sup>&frasl;<sub>9</sub> - <sup>2</sup>&frasl;<sub>9</sub> =</strong></p>
+                <input type="text" id="answerInput5" placeholder="Sua resposta">
+                <button id="checkAnswer5">Verificar</button>
+                <div id="feedback5"></div>
+            </div>
+
+            <!-- Exercício 6: Arraste e Solte -->
+            <div class="exercise" id="exercise6" style="display: none;">
+                <h2>Exercício 6</h2>
+                <p>Arraste a fração correta para completar a subtração <strong><sup>3</sup>&frasl;<sub>5</sub> - <sup>1</sup>&frasl;<sub>5</sub> =</strong></p>
+                <div class="drop-zone" id="dropZone6">Solte aqui</div>
+                <div class="drag-options">
+                    <div class="draggable" draggable="true" data-answer="2/5"><sup>2</sup>&frasl;<sub>5</sub></div>
+                    <div class="draggable" draggable="true" data-answer="3/5"><sup>3</sup>&frasl;<sub>5</sub></div>
+                    <div class="draggable" draggable="true" data-answer="1/5"><sup>1</sup>&frasl;<sub>5</sub></div>
+                </div>
+                <div id="feedback6"></div>
+            </div>
+
+            <!-- Exercício 7: Múltipla Escolha -->
+            <div class="exercise" id="exercise7" style="display: none;">
+                <h2>Exercício 7</h2>
+                <p>Qual é o resultado de <strong><sup>6</sup>&frasl;<sub>8</sub> - <sup>2</sup>&frasl;<sub>8</sub></strong>?</p>
+                <div class="options">
+                    <button class="answer" data-answer="4/8"><sup>4</sup>&frasl;<sub>8</sub></button>
+                    <button class="answer" data-answer="1/2"><sup>1</sup>&frasl;<sub>2</sub></button>
+                    <button class="answer" data-answer="6/8"><sup>6</sup>&frasl;<sub>8</sub></button>
+                    <button class="answer" data-answer="5/8"><sup>5</sup>&frasl;<sub>8</sub></button>
+                </div>
+                <div id="feedback7"></div>
+            </div>
+
+            <!-- Exercício 8: Preencha a Resposta -->
+            <div class="exercise" id="exercise8" style="display: none;">
+                <h2>Exercício 8</h2>
+                <p>Complete a subtração: <strong><sup>9</sup>&frasl;<sub>12</sub> - <sup>3</sup>&frasl;<sub>12</sub> =</strong></p>
+                <input type="text" id="answerInput8" placeholder="Sua resposta">
+                <button id="checkAnswer8">Verificar</button>
+                <div id="feedback8"></div>
+            </div>
+
+            <!-- Exercício 9: Arraste e Solte -->
+            <div class="exercise" id="exercise9" style="display: none;">
+                <h2>Exercício 9</h2>
+                <p>Arraste a fração correta para completar a subtração <strong><sup>7</sup>&frasl;<sub>10</sub> - <sup>2</sup>&frasl;<sub>10</sub> =</strong></p>
+                <div class="drop-zone" id="dropZone9">Solte aqui</div>
+                <div class="drag-options">
+                    <div class="draggable" draggable="true" data-answer="5/10"><sup>5</sup>&frasl;<sub>10</sub></div>
+                    <div class="draggable" draggable="true" data-answer="4/10"><sup>4</sup>&frasl;<sub>10</sub></div>
+                    <div class="draggable" draggable="true" data-answer="3/10"><sup>3</sup>&frasl;<sub>10</sub></div>
+                </div>
+                <div id="feedback9"></div>
+            </div>
+
+            <!-- Exercício 10: Múltipla Escolha -->
+            <div class="exercise" id="exercise10" style="display: none;">
+                <h2>Exercício 10</h2>
+                <p>Qual é o resultado de <strong><sup>5</sup>&frasl;<sub>7</sub> - <sup>2</sup>&frasl;<sub>7</sub></strong>?</p>
+                <div class="options">
+                    <button class="answer" data-answer="3/7"><sup>3</sup>&frasl;<sub>7</sub></button>
+                    <button class="answer" data-answer="2/7"><sup>2</sup>&frasl;<sub>7</sub></button>
+                    <button class="answer" data-answer="4/7"><sup>4</sup>&frasl;<sub>7</sub></button>
+                    <button class="answer" data-answer="5/7"><sup>5</sup>&frasl;<sub>7</sub></button>
+                </div>
+                <div id="feedback10"></div>
+            </div>
+
+            <!-- Botão para passar para o próximo exercício -->
+            <button id="nextExercise" style="display: none;">Próximo Exercício</button>
+        </div>
+    </div>
+
+    <script src="subtraction.js"></script>
+    <script>
+        // Lógica para iniciar os exercícios ao clicar no botão
+        document.getElementById('startExercises').addEventListener('click', function() {
+            document.getElementById('exercises').style.display = 'block';
+            document.getElementById('videoContainer').style.display = 'none'; // Esconde o vídeo após iniciar os exercícios
+            this.style.display = 'none'; // Esconde o botão após iniciar os exercícios
+        });
+    </script>
+</body>
+</html>

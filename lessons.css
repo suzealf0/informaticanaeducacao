@@ -1,0 +1,171 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('background.png'); /* Imagem de fundo */
+    background-size: cover; /* Cobre toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Contêiner principal */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border: 2px solid #43a047; /* Verde da paleta */
+}
+
+/* Título da lição */
+h1 {
+    color: #1b5e20; /* Verde escuro da paleta */
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Vídeo de introdução */
+.video-container video {
+    width: 90%; /* Ajusta a largura do vídeo */
+    border-radius: 15px; /* Bordas arredondadas no vídeo */
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); /* Sombra ao redor do vídeo */
+    margin-bottom: 20px; /* Espaço abaixo do vídeo */
+}
+
+/* Títulos dos exercícios */
+h2 {
+    font-size: 22px;
+    color: #006064; /* Azul escuro da paleta */
+    margin-bottom: 10px;
+}
+
+/* Estilo dos exercícios */
+.exercise {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo das opções de resposta (múltipla escolha) */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.answer {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px; /* Bordas arredondadas */
+    background-color: #1976d2; /* Azul da paleta */
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.answer:hover {
+    background-color: #0d47a1; /* Azul mais escuro da paleta */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+/* Caixa de entrada para preenchimento de resposta */
+input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 25px;
+    border: 2px solid #ffb74d; /* Laranja claro da paleta */
+    width: 180px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Botões de verificação e navegação */
+button#checkAnswer2, button#nextExercise, button#startExercises {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px; /* Bordas arredondadas */
+    background-color: #ff7043; /* Laranja da paleta */
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+button#checkAnswer2:hover, button#nextExercise:hover, button#startExercises:hover {
+    background-color: #d84315; /* Laranja mais escuro da paleta */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+/* Zona de soltura para arrastar e soltar */
+.drop-zone {
+    width: 180px;
+    height: 50px;
+    border: 2px dashed #43a047; /* Verde da paleta */
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+    color: #006064; /* Azul escuro da paleta */
+    border-radius: 15px;
+    background-color: #e8f5e9; /* Verde claro da paleta */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo das opções de arraste */
+.drag-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.draggable {
+    padding: 12px 20px;
+    background-color: #1976d2; /* Azul da paleta */
+    color: white;
+    border-radius: 50px; /* Bordas arredondadas */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.draggable:hover {
+    background-color: #0d47a1; /* Azul mais escuro da paleta */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+/* Feedback para respostas */
+#feedback1, #feedback2, #feedback3, #feedback4, #feedback5, #feedback6, #feedback7, #feedback8, #feedback9, #feedback10 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Estilo adicional para manter a consistência */
+.back-link {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #43a047; /* Verde da paleta */
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-link:hover {
+    background-color: #1b5e20; /* Verde mais escuro da paleta */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}

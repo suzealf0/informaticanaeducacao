@@ -1,0 +1,118 @@
+/* Estilo do body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('background.png'); /* Referência à imagem de fundo */
+    background-size: cover; /* Garante que a imagem cubra toda a área da tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contêiner principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo com leve transparência para destacar o conteúdo */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    color: #3F7C75; /* Verde mais escuro da paleta */
+    margin-bottom: 20px;
+    text-align: center; /* Centralizado para dar destaque ao título */
+}
+
+/* Container de progresso */
+.progress-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Label e barra de progresso */
+.progress-container label {
+    font-size: 16px;
+    color: #247881; /* Azul petróleo da paleta */
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    flex-grow: 1;
+    height: 10px;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress {
+    background-color: #4CAF50;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.progress-percentage {
+    font-size: 14px;
+    color: #247881; /* Azul petróleo da paleta */
+}
+
+/* Listagem de lições */
+.lessons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    text-align: justify; /* Justificando o texto das lições */
+}
+
+/* Estilo das lições */
+.lesson {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.lesson:hover {
+    background-color: #EAF2EF; /* Fundo claro ao passar o mouse */
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Estilo dos círculos das lições */
+.circle {
+    background-color: #3F7C75; /* Verde mais escuro da paleta */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+}
+
+.circle img {
+    max-width: 80%;
+    border-radius: 50%;
+}
+
+/* Estilo das informações das lições */
+.lesson-info h2 {
+    font-size: 18px;
+    color: #247881; /* Azul petróleo da paleta */
+    margin: 0;
+    text-align: justify; /* Justificando o texto dos títulos das lições */
+}
